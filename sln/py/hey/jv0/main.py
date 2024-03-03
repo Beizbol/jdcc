@@ -1,9 +1,11 @@
 from bottle import route, run
 
 
+@route("/")
 @route("/hey")
-def index(name):
+def hey():
     return "Hey from Python!"
 
 
-run(host="localhost", port=4269)
+if __name__ == "__main__":
+    run(host="localhost", port=4269)
