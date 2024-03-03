@@ -1,17 +1,25 @@
-from bottle import request, route, run, static_file
+from blacksheep import Application as App, ContentDispositionType
+from blacksheep import Request, get, post, file
+import uvicorn as server
+
+app = App()
 
 
-@route("/")
-def home():
-    return static_file("find.html", root="../../../../www/")
+@get("/")
+async def home():
+    return file(
+        "../../../../www/find.html",
+        content_type="text/html",
+        content_disposition=ContentDispositionType.INLINE,
+    )
 
 
-@route("/find", method="POST")
-def find():
-    search = request.forms.get("search")
-    # TODO: Implement search
-    return f"Searching for {search}..."
+@post("/find")
+async def hey(request: Request):
+    form_dict = await request.form()
+    search = form_dict["search"]
+    return f"Searching for: {search}"
 
 
 if __name__ == "__main__":
-    run(host="localhost", port=4269)
+    server.run("main:app", port=4269, log_level="info")
