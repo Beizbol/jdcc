@@ -8,7 +8,7 @@
         "run": "./jv0"
     },
     {
-        "path": "sln/py/hey/v",
-        "run": "rye run jv0"
+        "path": "sln/py/hey/jv0",
+        "run": "python3 main.py"
     }
 ]
