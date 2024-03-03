@@ -2,4 +2,4 @@
 
 Python JDCC Hey v0 
 
-By Jake 
+built with rye https://rye-up.com/
