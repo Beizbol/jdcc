@@ -1,0 +1,14 @@
+[
+    {
+        "path": "sln/go/hey/jv0",
+        "run": "./jv0"
+    },
+    {
+        "path": "sln/go/find/jv0",
+        "run": "./jv0"
+    },
+    {
+        "path": "sln/py/hey/jv0",
+        "run": "python3 jv0.py"
+    }
+]

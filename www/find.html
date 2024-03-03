@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find</title>
+    <style>
+        :root {
+            color-scheme: dark light;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            padding: 1rem;
+        }
+
+        main {
+            padding: 1rem;
+            background-color: #0006;
+            border-radius: 0.5rem;
+        }
+
+        form {
+            display: flex;
+            gap: 0.5rem;
+            font-size: larger;
+        }
+
+        form>* {
+            font-size: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Find</h1>
+        <h3>
+            </h1>
+            <search>
+                <form action="/find" method="post">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <button>&#x2315;</button>
+                </form>
+            </search>
+    </main>
+</body>
+
+</html>

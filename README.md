@@ -4,15 +4,15 @@ The JDev Coding Challenge
 ### The Tasks
 
 Server:
- - Hey: A sever that answers the /hey route with a message.
- - Find: A sever that answers the /find route with the output for a string input.
- - Stack: A full server rendered todo style c.r.u.d. app
+ - hey: server answers the /hey route with a string message.
+ - find: server answers the /find route by searching any storage.
+ - crud: server answers the 4 c.r.u.d. routes with json 
+
 
 ... tbd - suggestions welcome ...
+ - frame: use a fullstack solution to deliever a 
 
 ### Adding a Solution
-- Add branch to work in until it's ready.
-- Add path /{lang}/{challenge}/{unique} (/rust/find/jv0)
+- Add path /sln/{lang}/{challenge}/{unique} (/sln/rust/find/jv0)
 - Add a .gitignore for new langs
-- Add tests and benchmarks to share
-- Add pull request :)
+- Add solution to all.json with 
