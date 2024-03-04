@@ -14,6 +14,6 @@ Server Tasks:
  - frame: use a fullstack solution to deliever a 
 
 ### Adding a Solution
-- Add path /sln/{lang}/{challenge}/{unique} (/sln/rust/find/jv0)
+- Add path "src/{lang}/{challenge}/{id}" (/src/go/sever/jv0)
 - Add a .gitignore for new langs
 - Add solution to all.json with 

@@ -14,8 +14,13 @@ async def home():
     )
 
 
+@get("/hey")
+async def hey():
+    return "Hey from Python!"
+
+
 @post("/find")
-async def hey(request: Request):
+async def find(request: Request):
     form_dict = await request.form()
     search = form_dict["search"]
     return f"Searching for: {search}"
