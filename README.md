@@ -3,11 +3,12 @@ The JDev Coding Challenge
 
 ### The Tasks
 
-Server:
- - hey: server answers the /hey route with a string message.
- - find: server answers the /find route by searching any storage.
- - crud: server answers the 4 c.r.u.d. routes with json 
-
+Server Tasks:
+ - / server answers home with an html page
+ - /hey: server answers with a string message.
+ - /find: server answers query by searching any storage.
+ - /crud: server answers with a single page app
+ - /c.r.u.d. the 4 crud routes with json for the above
 
 ... tbd - suggestions welcome ...
  - frame: use a fullstack solution to deliever a 
